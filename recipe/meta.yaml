@@ -1,18 +1,18 @@
 {% set name = "smqtk-core" %}
-{% set version = "0.19.0" %}
+{% set version = "0.20.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/smqtk-core-{{ version }}.tar.gz
-  sha256: 0df2604818eeb0d2fb7bb45c0121231b07fb1d065d7ed9ccb04c21c6822a8ede
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 64e2992ed4923f7f0cfe2111edc93dfd54913800eb4cbdd1f77e9c90d310686f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
