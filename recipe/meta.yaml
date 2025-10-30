@@ -1,5 +1,5 @@
 {% set name = "smqtk-core" %}
-{% set version = "0.20.0" %}
+{% set version = "0.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 64e2992ed4923f7f0cfe2111edc93dfd54913800eb4cbdd1f77e9c90d310686f
+  sha256: 3be63308f2146b16351e5274dac587707ac31d47ef6f4816caceddc6aaa2c83d
 
 build:
   noarch: python
